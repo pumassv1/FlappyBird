@@ -1,4 +1,3 @@
-
 class CollisionManager:
     def check_collisions(self, bird, pipes):
         if bird.centery >= 923 or bird.centery <= 0:

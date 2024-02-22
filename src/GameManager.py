@@ -1,10 +1,10 @@
-import Consts
-import Floor
-import Pipes
-import Bird
-import Score
-import Sounds
-import CollisionManager
+import src.Consts as Consts
+import src.Floor as Floor
+import src.Pipes as Pipes
+import src.Bird as Bird
+import src.Score as Score
+import src.Sounds as Sounds
+import src.CollisionManager as CollisionManager
 import pygame
 import sys
 
@@ -17,7 +17,7 @@ class GameManager:
         self.pipe = Pipes.Pipes()
         self.score = Score.Score()
         self.sound = Sounds.Sounds()
-        self.game_status = True
+        self.game_status = False
 
     def reset_game(self):
         self.pipe.pipe_list = []
@@ -69,7 +69,3 @@ class GameManager:
 
             pygame.display.update()
             Consts.clock.tick(60)
-
-
-
-

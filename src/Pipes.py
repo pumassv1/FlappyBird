@@ -1,4 +1,4 @@
-import Consts
+import src.Consts as Consts
 import pygame
 import random
 
@@ -32,4 +32,3 @@ class Pipes:
         for pipe in self.pipe_list:
             if pipe.centerx <= -50:
                 self.pipe_list.remove(pipe)
-

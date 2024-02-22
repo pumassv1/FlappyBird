@@ -25,7 +25,3 @@ class Bird:
             return pygame.transform.rotozoom(self.bird_surface_up, -self.movement * 1.5, 1)
         else:
             return pygame.transform.rotozoom(self.bird_surface_down, -self.movement * 1.5, 1)
-
-
-
-

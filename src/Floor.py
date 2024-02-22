@@ -1,4 +1,4 @@
-import Consts
+import src.Consts as Consts
 import pygame
 
 class Floor:
@@ -15,4 +15,3 @@ class Floor:
         Consts.screen.blit(self.floor_surface2, (self.floor_x_pos + 576,924))
         if self.floor_x_pos <= -576:
             self.floor_x_pos = 0
-

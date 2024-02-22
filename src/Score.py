@@ -1,7 +1,6 @@
-import Consts
+import src.Consts as Consts
 import pygame
-import Pipes
-import Sounds
+import src.Sounds as Sounds
 
 class Score:
     def __init__(self):
